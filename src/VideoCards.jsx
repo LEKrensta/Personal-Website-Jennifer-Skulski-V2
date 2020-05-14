@@ -19,8 +19,8 @@ import thumbnail5 from "./assets/portfolio/thumbnails/jerry-promo-thumbnail.png"
 import thumbnail6 from "./assets/portfolio/thumbnails/k9-thumbnail.png";
 import thumbnail7 from "./assets/portfolio/thumbnails/lego-big-bang-thumbnail.png";
 import thumbnail8 from "./assets/portfolio/thumbnails/poisoned-thumbnail.png";
-import thumbnail9 from "./assets/portfolio/thumbnails/bobbi-ross-thumbnail.png";
-import thumbnail10 from "./assets/portfolio/thumbnails/blue-goes-to-college-thumbnail.png";
+import thumbnail9 from "./assets/portfolio/thumbnails/breaking-bread-thumbnail.PNG";
+import thumbnail10 from "./assets/portfolio/thumbnails/hot-rod-thumbnail.png";
 
 const useStyles = makeStyles({
   title: {
@@ -78,6 +78,27 @@ const VideoCards = () => {
               A Test Edit created during my post-production internship at Malka
               Media in Santa Monica during the Fall 2019 semester. (Organized
               hours of footage to create a 60 second UFC promo in Premiere Pro)
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+
+      <Card className={styles.root}>
+        <CardActionArea onClick={() => handleDialogOpen("IYbe-MxmdOU")}>
+          <CardMedia
+            className={styles.media}
+            image={thumbnail9}
+            title="Breaking Bread"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Breaking Bread
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              A short compilation episode for Nick Turturro’s Breaking Bread
+              podcast created during my internship with Malka Media. (Organized
+              hours of podcast footage to help edit this compilation in Premiere
+              Pro)
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -205,6 +226,25 @@ const VideoCards = () => {
           </CardContent>
         </CardActionArea>
       </Card>
+      <Card className={styles.root}>
+        <CardActionArea onClick={() => handleDialogOpen("hAjcUjtlLz8")}>
+          <CardMedia
+            className={styles.media}
+            image={thumbnail10}
+            title="Lego Hot Rod"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Lego Hot Rod
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              Watch as the iconic characters from Hot Rod (2007) introduce
+              themselves as Lego minifigures. (Photographed 524 still images and
+              edited them together in Premiere Pro)
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
 
       <Card className={styles.root}>
         <CardActionArea onClick={() => handleDialogOpen("H1YiJghqO28")}>
@@ -221,45 +261,6 @@ const VideoCards = () => {
               There's no better way to start your day than with some coffee...
               well unless its been tampered with... (A short sequence edited in
               Premiere Pro)
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-
-      <Card className={styles.root}>
-        <CardActionArea onClick={() => handleDialogOpen("CNB-IqVr1e4")}>
-          <CardMedia
-            className={styles.media}
-            image={thumbnail9}
-            title="Bobbi and Ross"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Bobbi and Ross
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Sibling duo, Bobbi and Ross, own a record store and are
-              desperately trying to get rid of all Micahel Jackson merchandise.
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-
-      <Card className={styles.root}>
-        <CardActionArea onClick={() => handleDialogOpen("wYtnQOzQd0o")}>
-          <CardMedia
-            className={styles.media}
-            image={thumbnail10}
-            title="Steve and Blue Go to College"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Steve and Blue Go to College
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              A comedy sketch parodying Blue’s Clues written for Syracuse’s
-              student-run comedy show, Live From Studio B. Looks like Blue is
-              all grown up. I wonder how Steve will feel about that…
             </Typography>
           </CardContent>
         </CardActionArea>

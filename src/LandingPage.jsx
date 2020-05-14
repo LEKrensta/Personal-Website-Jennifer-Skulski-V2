@@ -24,6 +24,9 @@ const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    ['@media (min-width:1080px)']: {
+      marginRight: "15%"
+    }
   },
 
   button: {
@@ -70,7 +73,7 @@ const LandingPage = () => {
               Resume
             </Button>
             
-            <Button variant="contained" color="primary" className={styles.button} href="#projects">
+            <Button variant="contained" color="primary" className={styles.button} href="#portfolio">
               View My Work
             </Button>
             
