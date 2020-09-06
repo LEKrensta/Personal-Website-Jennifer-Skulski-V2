@@ -76,7 +76,7 @@ const ScriptCards = () => {
               Cross Roads
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              This short story follows the man responsible for painting the two
+              This short script follows the man responsible for painting the two
               yellow lines on the road as he becomes delayed in his work when he
               crosses paths with the cross-walk painter.
             </Typography>
@@ -88,7 +88,7 @@ const ScriptCards = () => {
         <CardActionArea href={script4} download>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Fornite
+              Every Night's A Fortnite
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               A comedy sketch reimagining the popular video game, Fortnite to
@@ -102,7 +102,7 @@ const ScriptCards = () => {
         <CardActionArea href={script5} download>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Olympus Manor
+              Olympus Manor Pilot
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               An original sit-com pilot episode. The Greek Gods and Goddesses
@@ -117,7 +117,7 @@ const ScriptCards = () => {
         <CardActionArea href={script6} download>
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Blues Clues
+              Steve and Blue Go to College
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               A comedy sketch parodying Blue’s Clues written for Syracuse’s

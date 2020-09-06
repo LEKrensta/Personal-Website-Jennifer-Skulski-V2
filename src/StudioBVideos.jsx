@@ -19,6 +19,10 @@ import thumbnail5 from "./assets/portfolio/thumbnails/interview-thumbnail.png";
 import thumbnail6 from "./assets/portfolio/thumbnails/writer-cold-open.png";
 import thumbnail7 from "./assets/portfolio/thumbnails/kids-thumbnail.png";
 
+import script1 from "./assets/portfolio/scripts/Steve and Blue Go to College.pdf";
+import script2 from "./assets/portfolio/scripts/Undercover Host.pdf";
+import script3 from "./assets/portfolio/scripts/Every Night's A Fortnite.pdf";
+
 const useStyles = makeStyles({
   title: {
     textAlign: "center",
@@ -61,7 +65,7 @@ const StudioBVideos = () => {
   return (
     <div id="StudioBVideos" className={styles.grid}>
       <Card className={styles.root}>
-        <CardActionArea onClick={() => handleDialogOpen("CNB-IqVr1e4")}>
+        <CardActionArea className={styles.button} onClick={() => handleDialogOpen("CNB-IqVr1e4")}>
           <CardMedia
             className={styles.media}
             image={thumbnail1}
@@ -89,6 +93,21 @@ const StudioBVideos = () => {
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               Steve and Blue Go to College
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              A comedy sketch parodying Blue’s Clues written for Syracuse’s
+              student-run comedy show, Live From Studio B. Looks like Blue is
+              all grown up. I wonder how Steve will feel about that…
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+
+      <Card className={styles.root}>
+        <CardActionArea href={script1} download>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Steve and Blue Go to College Script
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               A comedy sketch parodying Blue’s Clues written for Syracuse’s
@@ -191,6 +210,35 @@ const StudioBVideos = () => {
             <Typography variant="body2" color="textSecondary" component="p">
               A short comedy segment written and performed by the writers of
               Live From Studio B.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+
+      <Card className={styles.root}>
+        <CardActionArea href={script2} download>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Undercover Host
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              A comedy sketch written for Syracuse’s student-run comedy show,
+              Live From Studio B. From the makers of Undercover Boss comes the
+              college party edition, “Undercover Host.”
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+
+      <Card className={styles.root}>
+        <CardActionArea href={script3} download>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              Every Night's A Fortnite
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              A comedy sketch reimagining the popular video game, Fortnite to
+              take place on a college campus.
             </Typography>
           </CardContent>
         </CardActionArea>

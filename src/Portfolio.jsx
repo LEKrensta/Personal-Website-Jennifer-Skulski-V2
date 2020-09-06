@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import Grow from "@material-ui/core/Grow";
 
 import VideoCards from "./VideoCards";
 import StudioBVideos from "./StudioBVideos";
@@ -11,7 +10,7 @@ import ScriptCards from "./ScriptCards";
 const useStyles = makeStyles({
   title: {
     textAlign: "center",
-    marginTop: "50px",
+    marginTop: "25px",
   },
 
   root: {
@@ -38,7 +37,7 @@ const Portfolio = () => {
   const styles = useStyles();
   const [filter, setFilter] = useState({
     all: true,
-    reel: false,
+    videos: false,
     scripts: false,
     LFSB: false
   });
@@ -46,16 +45,14 @@ const Portfolio = () => {
   const renderWithFilter = () => {
     if (filter.all) {
       return (
-        <Grow in={true} unmountOnExit>
           <div>
             <VideoCards />
             <StudioBVideos />
             <ScriptCards />
           </div>
-        </Grow>
       );
-    } else if (filter.reel) {
-      return <VideoCards />;
+    } else if (filter.videos) {
+      return (<VideoCards />);
     } else if (filter.scripts) {
       return <ScriptCards />;
     } else if (filter.LFSB) {
@@ -76,7 +73,7 @@ const Portfolio = () => {
           onClick={() =>
             setFilter({
               all: true,
-              reel: false,
+              videos: false,
               scripts: false,
               LFSB: false,
             })
@@ -86,19 +83,19 @@ const Portfolio = () => {
         </Button>
 
         <Button
-          variant={filter.reel ? "contained" : "text"}
+          variant={filter.videos ? "contained" : "text"}
           color="primary"
           className={styles.button}
           onClick={() =>
             setFilter({
               all: false,
-              reel: true,
+              videos: true,
               scripts: false,
               LFSB: false,
             })
           }
         >
-          Reel
+          Videos
         </Button>
 
         <Button
@@ -108,7 +105,7 @@ const Portfolio = () => {
           onClick={() =>
             setFilter({
               all: false,
-              reel: false,
+              videos: false,
               scripts: true,
               LFSB: false,
             })
@@ -124,7 +121,7 @@ const Portfolio = () => {
           onClick={() =>
             setFilter({
               all: false,
-              reel: false,
+              videos: false,
               scripts: false,
               LFSB: true,
             })
